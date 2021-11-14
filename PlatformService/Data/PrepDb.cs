@@ -12,7 +12,9 @@ namespace PlatformService.Data
         {
             using (var serviceScope = app.ApplicationServices.CreateScope())
             {
-                SeedData(serviceScope.ServiceProvider.GetService<AppDBContext>());
+                SeedData(serviceScope
+                    .ServiceProvider
+                    .GetService<AppDBContext>());
             }
         }
 
@@ -21,11 +23,23 @@ namespace PlatformService.Data
             if (!context.PlatForms.Any())
             {
                 Console.WriteLine("---> Seeding data ....");
-                context.PlatForms.AddRange(
-                    new Platform() { Name = "Dot Net", Publisher = "Microsoft", Cost = "free" },
-                    new Platform() { Name = "SQL Server", Publisher = "Microsoft", Cost = "free" },
-                    new Platform() { Name = "Kubernetes", Publisher = "CNCF", Cost = "free" }
-                );
+                context
+                    .PlatForms
+                    .AddRange(new Platform()
+                    {
+                        Name = "Dot Net",
+                        Publisher = "Microsoft",
+                        Cost = "free"
+                    },
+                    new Platform()
+                    {
+                        Name = "SQL Server",
+                        Publisher = "Microsoft",
+                        Cost = "free"
+                    },
+                    new Platform()
+                    { Name = "Kubernetes", Publisher = "CNCF", Cost = "free" });
+                context.SaveChanges();
             }
             else
             {

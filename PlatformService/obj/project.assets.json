@@ -6043,11 +6043,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PlatformService\\PlatformService.csproj",
+      "projectUniqueName": "c:\\Users\\Admin\\Desktop\\MicroServices .NET\\PlatformService\\PlatformService.csproj",
       "projectName": "PlatformService",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\PlatformService\\PlatformService.csproj",
+      "projectPath": "c:\\Users\\Admin\\Desktop\\MicroServices .NET\\PlatformService\\PlatformService.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\PlatformService\\obj\\",
+      "outputPath": "c:\\Users\\Admin\\Desktop\\MicroServices .NET\\PlatformService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
